@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khushi Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/81cc2cde0d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><span>K</span>hushi <span>A</span>grawal</h1>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times"></i>
+                </ul>
+                <i class="fas fa-bars"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi,<br>I'm <span>Khushi</span>.</h1>
+                <a href="#" class="cre"> Download CV</a>
+            </div>
+        </div>
+    </div>
+
+<!------------------ About  ------------------->
+    <div id ="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user12.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <h2>Software Developer</h2>
+                    <p>I'm an aspiring Computer Science student currently in the pre-final year of my B.tech program, based in Jaipur.</p>
+                    
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('relevant coursework')">Relevant Courswork</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2020-current</span><br>B.tech(CSE) at <span>JECRC University</span></li>
+                            <li><span>2019-2020</span><br>Senior Secondary School at <span>Vikas Bal Vidhya Peeth</span></li>
+                            <li><span>2017-2018</span><br>Higher Secondary School at <span>Vikas Bal Vidhya Peeth</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="relevant coursework">
+                        <ul>
+                            <li>Data Structures and Algorithm</li>
+                            <li>DataBase Management</li>
+                            <li>Operatinf System</li>
+                            <li>Computer Networks</li>
+                            <li>Object Oriented Programming</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li class="pro"><span>On Road Vehicle BreakDown Assistance</span><br>1. Developed user-friendly app interfaces using XML, focusing on enhancing the overall user experience.
+                                <br>2. Utilized Firebase libraries to efficiently handle data storage and management, ensuring seamless integration and real-time updates within the app.<br>
+                            3. Implemented backend functionality in Java, managing server-side operations to support the core app features.<br>
+                        4. Designed and built an app with the primary goal of connecting users with mechanics, offering a comprehensive database of mechanic details.<br>
+                    5. Enabled direct communication with mechanics by providing phone contact information, simplifying the process of connecting users with the services they need.</li>
+                        </ul>
+                    </div>
+
+                     <!-- <a href="#" class="cre">Download Resume</a> -->
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------- Skills --------------------->
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-brands fa-android "></i>
+                    <h2>Android</h2>
+                    <p>I have a foundational understanding of Android app development, with proficiency in creating frontend interfaces using XML. 
+                        Currently, I'm expanding my skills by delving into backend development using Java.</p>
+                        
+                </div>
+                <div>
+                    <i class="fa-solid fa-code "></i>
+                    <h2>Web development</h2>
+                    <p>I'm proficient in HTML, CSS, and JavaScript, and I'm actively expanding my knowledge into backend development.</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-brands fa-java "></i>
+                    <h2>JAVA</h2>
+                    <p>I have expertise in Java programming and am actively expanding my knowledge in Data Structures and Algorithms.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ---------------------Contact------------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i>kagrawal2016@gmail.com</p>
+                <p><i class="fa-solid fa-phone-flip"></i>+91 6376693199</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/khushi-agrawal-84a0711ba/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <a href="Khushi Agrawal_Jecrc University_resume_1.pdf" download class="cre"> Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="cre cre2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Created by <span>Khushi</span> © All rights are reserved. </p>
+    </div>
+</div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+
+</body>
+</html>
